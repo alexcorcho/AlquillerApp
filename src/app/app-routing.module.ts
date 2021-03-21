@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: "admin/login", component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: "recover", component: PasswordComponent },
-  { path: "register", component: RegistroComponent },
+  { path: "registro", component: RegistroComponent },
   { path: "**", component: Page404Component }
 
 ];

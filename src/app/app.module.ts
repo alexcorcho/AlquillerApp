@@ -16,6 +16,9 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { MenuComponent } from './componentes/menu/menu.component';
 import { SettingComponent } from './componentes/setting/setting.component';
 import { Page404Component } from './paginas/page404/page404.component';
+import { CarruselComponent } from './componentes/carrusel/carrusel.component';
+import { InicioComponent } from './paginas/inicio/inicio.component';
+import { PropiedadesComponent } from './componentes/propiedades/propiedades.component';
 
 
 @NgModule({
@@ -34,6 +37,9 @@ import { Page404Component } from './paginas/page404/page404.component';
     MenuComponent,
     SettingComponent,
     Page404Component,
+    CarruselComponent,
+    InicioComponent,
+    PropiedadesComponent,
   ],
   imports: [
     BrowserModule,

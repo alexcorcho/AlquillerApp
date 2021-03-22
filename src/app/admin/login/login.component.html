@@ -1,0 +1,55 @@
+<section class="h-100 my-login-page">
+  <div class="container h-100">
+    <div class="row justify-content-md-center h-100">
+      <div class="card-wrapper">
+        <div class="brand">
+          <img src="" alt="logo">
+        </div>
+        <div class="card fat">
+          <div class="card-body">
+            <h4 class="card-title">Inicio</h4>
+            <form method="POST" class="my-login-validation" novalidate="">
+              <div class="form-group">
+                <label for="email">Correo Electronico</label>
+                <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+                <div class="invalid-feedback">
+                  Correo invalido
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Contraseña
+                  <a href="" class="float-right">
+                    Olvidaste tu contraseña?
+                  </a>
+                </label>
+                <input id="password" type="password" class="form-control" name="password" required data-eye>
+                <div class="invalid-feedback">
+                  Se requiere la contraseña
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="custom-checkbox custom-control">
+                  <input type="checkbox" name="remember" id="remember" class="custom-control-input">
+                  <label for="remember" class="custom-control-label">Recuerdame</label>
+                </div>
+              </div>
+
+              <div class="form-group m-0">
+                <button type="submit" class="btn btn-primary btn-block">
+                  Ingresar
+                </button>
+              </div>
+              <div class="mt-4 text-center">
+                No tienes una cuenta? <a href="">Crea una cuenta</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer">
+          Copyright &copy; 2021 &mdash; AlquilApp
+        </div>
+      </div>
+    </div>
+  </div>

@@ -19,6 +19,7 @@ import { Page404Component } from './paginas/page404/page404.component';
 import { CarruselComponent } from './componentes/carrusel/carrusel.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import { PropiedadesComponent } from './componentes/propiedades/propiedades.component';
+import { PublicaComponent } from './componentes/publica/publica.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { PropiedadesComponent } from './componentes/propiedades/propiedades.comp
     CarruselComponent,
     InicioComponent,
     PropiedadesComponent,
+    PublicaComponent,
   ],
   imports: [
     BrowserModule,

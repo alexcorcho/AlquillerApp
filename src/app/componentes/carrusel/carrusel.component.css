@@ -8,14 +8,13 @@ body {
   color: #5a5a5a;
 }
 
-button{
-  color: #fff;
-}
+
 button{
   color: #fff;
   background-color:#ff833a ;
   margin-top: 10px;
   width: 200px;
+
 }
 
 .carousel-caption{
@@ -32,6 +31,7 @@ h1{
   color: #fff;
   background-color: rgba(0, 0, 0, .4);
   padding: 20px;
+  text-shadow:0 1px 0 #000;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

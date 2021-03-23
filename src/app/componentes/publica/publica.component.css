@@ -3,6 +3,7 @@ section{
   border: 1px solid #ccc;
   padding: 1rem;
   margin: 1rem;
+  background-color: rgba(0, 0, 0, .4);
 }
 .row{
   text-align: center;

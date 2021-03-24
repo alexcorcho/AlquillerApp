@@ -20,6 +20,7 @@ import { CarruselComponent } from './componentes/carrusel/carrusel.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import { PropiedadesComponent } from './componentes/propiedades/propiedades.component';
 import { PublicaComponent } from './componentes/publica/publica.component';
+import { ArriendoComponent } from './paginas/arriendo/arriendo.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { PublicaComponent } from './componentes/publica/publica.component';
     InicioComponent,
     PropiedadesComponent,
     PublicaComponent,
+    ArriendoComponent,
   ],
   imports: [
     BrowserModule,

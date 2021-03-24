@@ -1,7 +1,15 @@
 html,body {
   height: 100%;
 }
-
+.btn{
+  background-color: #ff833a;
+}
+a ,h3 {
+  color: #ff833a;
+}
+section{
+  margin-top: 50px;
+}
 body.my-login-page {
   background-color: #f7f9fb;
   font-size: 14px;
@@ -45,6 +53,7 @@ body.my-login-page {
 
 .my-login-page .form-group label {
   width: 100%;
+  color:#ff833a;
 }
 
 .my-login-page .btn.btn-block {

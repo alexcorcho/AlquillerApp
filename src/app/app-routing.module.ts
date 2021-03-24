@@ -7,10 +7,12 @@ import { PasswordComponent} from './componentes/password/password.component';
 import { RegistroComponent } from './admin/registro/registro.component';
 import { Page404Component } from './paginas/page404/page404.component';
 import { InicioComponent } from './paginas/inicio/inicio.component'
+import { ArriendoComponent } from './paginas/arriendo/arriendo.component'
 
 
 const routes: Routes = [
   { path: "", component: InicioComponent },
+  { path:"arriendo",component:ArriendoComponent },
   { path:"inicio",component:InicioComponent },
   { path: "admin/perfil", component: PerfilComponent },
   { path: "admin/login", component: LoginComponent },

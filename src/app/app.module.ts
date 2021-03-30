@@ -21,7 +21,10 @@ import { InicioComponent } from './paginas/inicio/inicio.component';
 import { PropiedadesComponent } from './componentes/propiedades/propiedades.component';
 import { PublicaComponent } from './componentes/publica/publica.component';
 import { ArriendoComponent } from './paginas/arriendo/arriendo.component';
-
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { AngularFireAuthModule} from '@angular/fire/auth';
+import {AngularFirestoreModule } from '@angular/fire/firestore'
 
 @NgModule({
   declarations: [
@@ -47,7 +50,11 @@ import { ArriendoComponent } from './paginas/arriendo/arriendo.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFirestoreModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

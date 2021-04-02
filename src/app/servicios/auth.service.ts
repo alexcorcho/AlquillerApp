@@ -1,35 +1,17 @@
 import { Injectable, NgZone } from '@angular/core';
-import { auth } from  'firebase/app';
-import {AngularFireAuth } from '@angular/fire/auth';
-import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
-import { Router } from '@angular/router';
-import { LoginComponent } from '../admin/login/login.component';
-
-export interface User{
-  user:string;
-  email:string;
-  displayName: string;
-  photoURL:string;
-  emailVerified: boolean;
-}
+import { HttpClient} from '@angular/common/http'
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-    userState: any;
-  constructor(
-    public afs: AngularFirestore,
-    public afAuth: AngularFireAuth,
-    public router: Router,
-    public ngZone: NgZone
-    ) {
+    private _apiLocalURL ='../../assets/API-CORCHO/API_LOCAL.json';
+  constructor(private Http: HttpClient) { }
 
-   login(){
-
-   }
-
-   }
+  getJson():Observable<any>{
+    return this.Http.get(this._apiLocalURL)
+  }
 
 
 }

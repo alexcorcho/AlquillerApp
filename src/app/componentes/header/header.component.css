@@ -11,6 +11,7 @@
 .header_menu{
   display: flex;
   padding: 10px 8px 8px 8px;
+  width: 100%;
 }
 .header_menu > div{
   margin: 8px;

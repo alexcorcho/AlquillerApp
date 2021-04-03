@@ -19,7 +19,7 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { ListauserComponent } from './componentes/listauser/listauser.component';
 import { MenuComponent } from './componentes/menu/menu.component';
 import { PasswordComponent } from './componentes/password/password.component';
-import { PropiedadesComponent } from './componentes/propiedades/propiedades.component';
+import { PropiedadesComponent} from './componentes/propiedades/propiedades.component';
 import { PublicaComponent } from './componentes/publica/publica.component';
 import { SettingComponent } from './componentes/setting/setting.component';
 import { ArriendoComponent } from './paginas/arriendo/arriendo.component';

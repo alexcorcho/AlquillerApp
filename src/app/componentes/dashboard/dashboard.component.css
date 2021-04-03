@@ -1,0 +1,27 @@
+.properties{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.property > mat-card > img{
+  object-fit: contain;
+  height: 200px;
+}
+
+.property > mat-card{
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  width: 300px;
+  margin: 20px;
+  align-items: center;
+}
+
+
+.property > mat-card > button{
+  margin-top: 20px;
+  background-color: #f24405;
+  border: 1px solid;
+
+}

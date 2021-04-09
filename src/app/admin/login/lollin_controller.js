@@ -18,7 +18,7 @@ function goToDashboard(){
 
 // Función para registar nuevos usuarios
 function register() {
-    // var email = document.getElementById('email').nodeValue;
+    // var email = document.getElementById('email2').nodeValue;
     // var pass = document.getElementById('pass').nodeValue;
 
     firebase.auth().createUserWithEmailAndPassword(email, pass)

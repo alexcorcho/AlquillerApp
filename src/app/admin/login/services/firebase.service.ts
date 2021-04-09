@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from "@angular/fire/auth";
+import { Router } from "@angular/router";
 @Injectable({
   providedIn: 'root'
 })
 export class FirebaseService {
   isLoggedIn = false;
-  constructor(public firebaseAuth: AngularFireAuth) { }
+  constructor(public firebaseAuth: AngularFireAuth, public router: Router) { }
   // Recargar
   reload(){
     alert('Inicio exitoso!')
@@ -18,7 +19,7 @@ export class FirebaseService {
       .then(r => {
         this.isLoggedIn = true;
         localStorage.setItem('user', JSON.stringify(r.user));
-        this.reload();
+        this.router.navigate(['/dashboard']);
       }).catch((error => {
         var code = error.code;
         var mensaje = error.message;

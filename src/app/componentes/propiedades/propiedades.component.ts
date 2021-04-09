@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../servicios/auth.service';
 
-
 @Component({
   selector: 'app-propiedades',
   templateUrl: './propiedades.component.html',
@@ -19,8 +18,10 @@ export class PropiedadesComponent implements OnInit {
       this.items = resp
     })
   }
+
   addToFav(){
-    console.log('Añadido a favorito');
+    console.log('addToFav preset');
   }
+
 
 }

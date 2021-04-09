@@ -38,5 +38,13 @@
     "imagen": "../../assets/img/casa2.png",
     "precio": "850.000",
     "rankin": " 5"
+  },
+  {
+    "id": 1,
+    "titulo": " Se Alquila local ",
+    "ubicacion": " Carepa ",
+    "imagen": "../../assets/img/casa2.png",
+    "precio": "1.500.000",
+    "rankin": " 5"
   }
 ]

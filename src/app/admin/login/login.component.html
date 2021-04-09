@@ -2,20 +2,18 @@
 <div class="login">
 
   <div class="login_container">
-    <img class="login_logo" src="" />
     <div class="login_form">
       <h1>Ingresar</h1>
       <form >
-        <h5>Correo electronico</h5>
-        <input type="email" type="email">
+        <h5>Correo Electronico</h5>
+        <input type="email" #inputEmail>
         <h5>Contraseña</h5>
-        <input type="password" type="password">
-        <button class="login_singIn_button" >Ingresar</button>
-        <p></p>
-        <button class="login_create_button"> Crea tu cuenta</button>
+        <input type="password" #inputPass>
+        <button class="login_singIn_button" (click)="onSignUp(inputEmail.value, inputPass.value)">Ingresa</button>
+        <p class="login_terms"></p>
+        <button class="login_create_button" >Crea una cuenta</button>
       </form>
+      <button class="login_create_button" (click)="logout()">SALIR</button>
     </div>
-
-
   </div>
 </div>

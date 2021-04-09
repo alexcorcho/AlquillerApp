@@ -47,6 +47,10 @@ form >p{
     height: 30px;
     color: black;
 }
+form >p{
+    margin-top: 15px;
+    font-size: 12px;
+}
 
 .login_create_button{
 

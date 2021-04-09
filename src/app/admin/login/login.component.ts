@@ -7,7 +7,7 @@ import { FirebaseService } from "./services/firebase.service";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  @Output() isLogout = new EventEmitter<void>() 
+  @Output() isLogout = new EventEmitter<void>()
   constructor(public firebaseService : FirebaseService) { }
 
   ngOnInit(): void {

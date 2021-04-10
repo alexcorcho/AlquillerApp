@@ -9,7 +9,7 @@ export class FirebaseService {
   constructor(public firebaseAuth: AngularFireAuth, public router: Router) { }
   // Recargar
   reload(){
-    alert('Inicio exitoso!')
+    alert('Registro Exitoso!')
     location.reload();
   }
 
@@ -32,7 +32,8 @@ export class FirebaseService {
     await this.firebaseAuth.createUserWithEmailAndPassword(email, pass)
       .then(r => {
         this.isLoggedIn = true,
-          localStorage.setItem('user', JSON.stringify(r.user))
+          localStorage.setItem('user', JSON.stringify(r.user));
+          this.reload();
       }).catch((error => {
         var code = error.code;
         var mensaje = error.message;

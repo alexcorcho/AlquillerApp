@@ -1,0 +1,13 @@
+<div class="properties">
+  <div class="property" *ngFor = "let item of items" >
+    <mat-card>
+      <img src={{item.imagen}} alt="">
+      <p>{{item.titulo}}</p>
+      <p>{{item.ubicacion}}</p>
+      <p>$ <strong>{{item.precio}}</strong></p>
+      <button (click)="addToFav()">Me interesa</button>
+    </mat-card>
+  </div>
+
+
+</div>

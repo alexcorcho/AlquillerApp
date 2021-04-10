@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1 ,
+    "titulo": " Se Alquila Casa ",
+    "ubicacion":" Carepa ",
+    "imagen": "../../assets/img/casa1.jpg",
+    "precio": "450.000",
+    "rankin": " 4"
+  },
+  {
+    "id": 2,
+    "titulo": " Se Alquila apartamento ",
+    "ubicacion": " Apartadó ",
+    "imagen": "../../assets/img/casa2.png",
+    "precio": "650.000",
+    "rankin": " 3"
+  },
+  {
+    "id": 1,
+    "titulo": " Se Alquila Casa ",
+    "ubicacion": " Carepa ",
+    "imagen": "../../assets/img/casa3.jpg",
+    "precio": "350.000",
+    "rankin": " 2"
+  },
+  {
+    "id": 1,
+    "titulo": " Se Alquila Casa ",
+    "ubicacion": " Carepa ",
+    "imagen": "../../assets/img/casa1.jpg",
+    "precio": "250.000",
+    "rankin": " 5"
+  },
+  {
+    "id": 1,
+    "titulo": " Se Alquila Apartamento ",
+    "ubicacion": " Turbo ",
+    "imagen": "../../assets/img/casa2.png",
+    "precio": "850.000",
+    "rankin": " 5"
+  },
+  {
+    "id": 1,
+    "titulo": " Se Alquila local ",
+    "ubicacion": " Carepa ",
+    "imagen": "../../assets/img/casa2.png",
+    "precio": "1.500.000",
+    "rankin": " 5"
+  }
+]

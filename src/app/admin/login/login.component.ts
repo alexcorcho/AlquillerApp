@@ -16,6 +16,9 @@ export class LoginComponent implements OnInit {
   onSignUp(email : string, pass : string){
     this.firebaseService.login(email, pass);
   }
+   inSignUp(email : string, pass : string){
+    this.firebaseService.register(email, pass);
+  }
 
   logout(){
     this.firebaseService.logout();

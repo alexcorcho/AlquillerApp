@@ -33,7 +33,7 @@ export class FirebaseService {
       .then(r => {
         this.isLoggedIn = true,
           localStorage.setItem('user', JSON.stringify(r.user));
-        this.reload();
+        this.router.navigate(['/dashboard']);
       }).catch((error => {
         var code = error.code;
         var mensaje = error.message;
@@ -52,12 +52,20 @@ export class FirebaseService {
   observer() {
     var currentUser = localStorage.getItem('user');
     (currentUser != null) ? this.router.navigate(['/dashboard']) : this.router.navigate(['/admin/login']);
-
+    
+    // this.firebaseAuth.onAuthStateChanged((user) => {
+            
+    // });    
+    
   }
 
 
+  getUserData(){
+    let userData = [];
+    this.firebaseAuth.onAuthStateChanged((user) => {
 
-
-
+    });
+    
+  }
 
 }

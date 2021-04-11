@@ -8,7 +8,7 @@ export class FirebaseService {
   isLoggedIn = false;
   constructor(public firebaseAuth: AngularFireAuth, public router: Router) { }
   // Recargar
-  reload(){
+  reload() {
     alert('Registro Exitoso!')
     location.reload();
   }
@@ -33,7 +33,7 @@ export class FirebaseService {
       .then(r => {
         this.isLoggedIn = true,
           localStorage.setItem('user', JSON.stringify(r.user));
-          this.reload();
+        this.reload();
       }).catch((error => {
         var code = error.code;
         var mensaje = error.message;
@@ -42,11 +42,21 @@ export class FirebaseService {
   }
 
   // Función para cerrar sesión
-  logout(){
+  logout() {
     this.firebaseAuth.signOut();
     localStorage.removeItem('user');
     location.reload();
   }
+
+  // Función del observador
+  observer() {
+    var currentUser = localStorage.getItem('user');
+    (currentUser != null) ? this.router.navigate(['/dashboard']) : this.router.navigate(['/admin/login']);
+
+  }
+
+
+
 
 
 

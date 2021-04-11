@@ -11,6 +11,7 @@ export class LoginComponent implements OnInit {
   constructor(public firebaseService : FirebaseService) { }
 
   ngOnInit(): void {
+    this.currentUser();
   }
 
   onSignUp(email : string, pass : string){
@@ -22,6 +23,10 @@ export class LoginComponent implements OnInit {
 
   logout(){
     this.firebaseService.logout();
+  }
+
+  currentUser(){
+    this.firebaseService.observer();
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../servicios/auth.service';
+import { ApiService } from '../../servicios/api.service';
 
 @Component({
   selector: 'app-propiedades',
@@ -8,7 +8,7 @@ import { AuthService } from '../../servicios/auth.service';
 })
 export class PropiedadesComponent implements OnInit {
   items: any[] = [];
-  constructor(private api: AuthService) { }
+  constructor(private api: ApiService) { }
 
   ngOnInit(): void {
     this.getProperties()

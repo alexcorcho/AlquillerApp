@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService {
+export class ApiService {
     private _apiLocalURL ='../../assets/API-CORCHO/API_LOCAL.json';
   constructor(private Http: HttpClient) { }
 

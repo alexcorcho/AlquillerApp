@@ -19,9 +19,6 @@ export class PropiedadesComponent implements OnInit {
     })
   }
 
-  addToFav(){
-    console.log('addToFav preset');
-  }
 
 
 }

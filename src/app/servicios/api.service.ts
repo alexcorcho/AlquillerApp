@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-    // tslint:disable-next-line: variable-name
+
     private _apiLocalURL = '../../assets/API-CORCHO/API_LOCAL.json';
   constructor(private Http: HttpClient) { }
 

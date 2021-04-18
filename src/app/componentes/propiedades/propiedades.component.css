@@ -7,6 +7,7 @@
 .property > mat-card > img{
   object-fit: contain;
   height: 200px;
+
 }
 
 .property > mat-card{

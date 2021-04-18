@@ -48,24 +48,8 @@ export class FirebaseService {
     location.reload();
   }
 
-  // Función del observador
-  observer() {
-    var currentUser = localStorage.getItem('user');
-    (currentUser != null) ? this.router.navigate(['/dashboard']) : this.router.navigate(['/admin/login']);
-    
-    // this.firebaseAuth.onAuthStateChanged((user) => {
-            
-    // });    
-    
-  }
+  
 
 
-  getUserData(){
-    let userData = [];
-    this.firebaseAuth.onAuthStateChanged((user) => {
-
-    });
-    
-  }
 
 }

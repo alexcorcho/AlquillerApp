@@ -5,6 +5,9 @@ import { Router } from "@angular/router";
   providedIn: 'root'
 })
 export class FirebaseService {
+  observer() {
+    throw new Error('Method not implemented.');
+  }
   isLoggedIn = false;
   constructor(public firebaseAuth: AngularFireAuth, public router: Router) { }
   // Recargar
@@ -48,7 +51,7 @@ export class FirebaseService {
     location.reload();
   }
 
-  
+
 
 
 

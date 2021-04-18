@@ -15,7 +15,7 @@ const routes: Routes = [
   { path:"arriendo",component:ArriendoComponent },
   { path:"inicio",component:InicioComponent },
   { path: "admin/perfil", component: PerfilComponent },
-  { path: "admin/login", component: LoginComponent },
+  { path: "login", component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: "recover", component: PasswordComponent },
   { path: "registro", component: RegistroComponent },

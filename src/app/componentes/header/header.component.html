@@ -4,7 +4,7 @@
       <div class="header_menu_icon">
         <mat-icon>menu</mat-icon>
       </div>
-      <img src="../assets/logo.png" alt="logo" class="header_menu_logo">
+      <a href="inicio">ALQUILAPP</a>
       <div class="header_menu_searchbar">
         <input type="text" class="header_menu_input">
         <div class="header_menu_searchbar_icon">
@@ -12,12 +12,16 @@
         </div>
       </div>
       <div class="header_menu_singin">
-        <a href="/admin/login" class="header_menu_top_item">Ingresa aquí</a>
+        <a href="/login" class="header_menu_top_item">Ingresa aquí</a>
         <a href="/registro" class="header_menu_bottom_item">Crea una cuenta</a>
       </div>
       <div class="header_menu_singin">
         <span class="header_menu_top_item">Notificaciones</span>
         <span class="header_menu_bottom_item">y mensajes</span>
+      </div>
+      <div class="header_menu_singin">
+        <a class="header_menu_top_item"(click)="logout()">Salir</a>
+
       </div>
       <div class="header_menu_fav">
         <mat-icon>favorite</mat-icon>

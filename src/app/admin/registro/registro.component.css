@@ -34,11 +34,6 @@ form >input{
     background-color: white;
     width: 98%;
 }
-form >p{
-    margin-top: 15px;
-    font-size: 12px;
-
-}
 .registro_create_button{
     background-color: #f24405;
     border: 1px solid;
